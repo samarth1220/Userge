@@ -14,8 +14,8 @@ from userge import userge
 async def worker() -> None:
     chat_id = int(os.environ.get("CHAT_ID") or 0)
     await userge.send_message(chat_id, 'testing_userge')
-    print('sleeping 3 sec...!')
-    await asyncio.sleep(3)
+    print('sleeping 5 sec...!')
+    await asyncio.sleep(5)
 
 
 async def main() -> None:
